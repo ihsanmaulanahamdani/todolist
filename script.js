@@ -95,7 +95,14 @@ function doneList(i) {
             var objTemp = {};
             objTemp.id = counter;
             objTemp.text = element.text;
-            objTemp.done = true;
+            objTemp.done = !element.done;
+            doneArray.push(objTemp);
+            counter++;
+        } else {
+            var objTemp = {};
+            objTemp.id = counter;
+            objTemp.text = element.text;
+            objTemp.done = element.done;
             doneArray.push(objTemp);
             counter++;
         }
