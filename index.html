@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="brand-image">To Do List</div>
+        <div class="filter">
+            <button class="button" onclick="renderTodo()">To Do</button>
+            <button class="button" onclick="renderDone()">Done</button>
+            <button class="button" onclick="renderList()">All</button>
+        </div>
+    </div>
+    <div class="todo-body">
+        <div class="main-area">
+            <div class="title">To Do</div>
+            <div class="todo-list">
+                <ol id="todo-list"></ol>
+            </div>
+            <form action="">
+                <button type="button" onclick=newList(document.getElementById("todo").value) value="submit">Add To Do</button>
+                <input type="text" id="todo" placeholder="Add something to do . . .">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

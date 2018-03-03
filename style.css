@@ -1,0 +1,142 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Verdana, Geneva, Tahoma; 
+}
+
+.navbar {
+    background-color: #B71C1C;
+    color: white;
+    padding: 10px 75px;
+}
+
+.brand-image {
+    font-size: 24px;
+    display: inline-block;
+}
+
+.filter {
+    float: right;
+    position: relative;
+}
+
+.button {
+    height: 30px;
+    padding: 5px 16px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid #B71C1C;
+    color: white;
+    margin-left: 15px;
+}
+
+.button:hover {
+    background-color: white;
+    color: #B71C1C;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.active {
+    background-color: white;
+    color: #B71C1C;
+}
+
+.todo-body {
+    padding: 25px 75px;
+    position: relative;
+}
+
+.title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.main-area {
+    float: left;
+    width: 100%;
+    padding-left: 3%;
+    box-sizing: border-box;
+}
+
+.main-area > form {
+    margin-top: 25px;
+}
+
+.main-area > form > input {
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px solid #B71C1C;
+    padding-left: 15px;
+    width: 83%;
+    float: left;
+}
+
+.main-area > form > input:focus {
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid #B71C1C;
+    padding-left: 15px;
+    width: 80%;
+    float: left;
+    outline: none;
+}
+
+.main-area > form > button {
+    height: 30px;
+    padding: 5px 16px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid #B71C1C;
+    color: #B71C1C;
+    width: 15%;
+    float: right;
+}
+
+.main-area > form > button:hover {
+    background-color:#B71C1C;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.todo-list > ol > li {
+    list-style-position: inside;
+}
+
+.todo-list > ol > li > * {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.done, .delete {
+    margin-left: 15px;
+    border: 1px solid #B71C1C;
+    height: 28px;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    list-style: none;
+    background-color: transparent;
+}
+
+.done:hover, .delete:hover {
+    height: 28px;
+    border: 1px solid #B71C1C;
+    padding: 5px 16px;
+    border-radius: 14px;
+    box-sizing: border-box;
+    margin-left: 15px;
+    background-color: #B71C1C;
+    color: white;
+    cursor: pointer;
+}
+
+.true {
+    text-decoration: line-through;
+}
