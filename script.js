@@ -71,7 +71,11 @@ function addToList(todo) {
     buttonDone.addEventListener('click', function(e) {
         doneList(todo.id);
     }, true);
-    buttonDone.textContent = 'Done';
+    if (todo.done === true) {
+        buttonDone.textContent = 'Undone';
+    } else {
+        buttonDone.textContent = 'Done';
+    }
     // create button delete
     var buttonDelete = document.createElement('button');
     buttonDelete.className = 'delete';
@@ -87,7 +91,6 @@ function addToList(todo) {
 }
 
 function doneList(i) {
-    console.log('horray')
     var doneArray = [];
     var counter = 1;
     todoArray.forEach(function(element) {
@@ -125,7 +128,7 @@ function deleteList(i) {
             counter++;
         }
     });
-    console.log(newTodoArray);
+
     todoArray = newTodoArray;
     renderList();
 }
